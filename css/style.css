@@ -61,6 +61,17 @@ img {
         background: #c4c4c4;
         cursor: not-allowed;
     }
+
+    .btn_bordered {
+        background-color: transparent;
+        border-color: #4A5E5E;
+        margin-right: 30px;
+    }
+
+    .btn_bordered:hover,
+    .btn_bordered:focus{
+        border-color: #6DE1E3;
+    }
 /*btn*/
 
 /*header*/
@@ -259,6 +270,31 @@ img {
 /*services*/
 
 /*about*/
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+   position: relative;
+}
 
+.about__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 50px;
+}
+
+.about__text{
+    max-width: 625px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.565;
+    margin:0 0 35px;
+}
+
+.about__img {
+position: absolute;
+    top: 50%;
+    right: calc(50vw - 585px);;
+    transform: translateY(-50%);
+}
 /*about*/
 
