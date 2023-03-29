@@ -225,7 +225,7 @@ textarea:focus {
     padding: 60px calc(50vw - 385px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto repeat(3, 40px) 50px 40px;
+    grid-template-rows: auto repeat(3, 40px) auto 40px;
     gap: 30px;
     justify-content: center;
 }
@@ -287,7 +287,8 @@ textarea:focus {
     accent-color: #4A5E5E;
     font-size: 12px;
     color: #4A5E5E;
-    margin: 10px 0 0;
+    margin: 10px 0;
+    line-height: 2.5;
 }
 .btn__submit {
     grid-column: 1/-1;
