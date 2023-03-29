@@ -24,15 +24,30 @@ img {
     padding-right: calc(50vw - 585px);
 }
 
+/* знайшла на stackoverflow */
+input[type=text]:focus {
+    outline: 2px solid #6DE1E3;
+}
+
+input[type=tel]:focus {
+    outline: 2px solid #6DE1E3;
+}
+
+select:focus {
+    outline: 2px solid #6DE1E3;
+}
+
+textarea:focus {
+    outline: 2px solid #6DE1E3;
+}
+
 /*.subtitle*/
 .subtitle {
     text-align: center;
     font-size: 48px;
     margin: 0 0 50px;
 }
-
 /*.subtitle*/
-
 .section-with-bg-image {
     color: #fff;
     background-blend-mode: overlay;
@@ -218,7 +233,6 @@ img {
 .contact-form .subtitle {
     grid-column: 1 / -1;
     margin: 0 0 20px;
-
 }
 
 .contact-form__checkbox {
@@ -242,7 +256,7 @@ img {
     border-radius: 10px;
     border: 1px solid #000000;
     -webkit-appearance: none;
-   /* знайшла це на stackoverflow */
+    /* знайшла це на stackoverflow */
 }
 
 .contact-form__input::placeholder,
@@ -275,14 +289,10 @@ img {
     color: #4A5E5E;
     margin: 10px 0 0;
 }
-
 .btn__submit {
     grid-column: 1/-1;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
-
-
-
 /*contact-form*/
 
 /*services*/
@@ -372,7 +382,7 @@ img {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.565;
-    margin: 0 ;
+    margin: 0;
 }
 
 .about__img {
@@ -383,3 +393,59 @@ img {
 
 /*about*/
 
+/*appointment*/
+.appointment {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 40px 30px;
+    gap: 25px 30px;
+}
+
+.appointment .subtitle {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    font-weight: 700;
+    margin-bottom:  35px;
+
+}
+
+.appointment__input-name,
+.appointment__input-tel {
+    width: 369px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    -webkit-appearance: none;
+    /* знайшла це на stackoverflow */
+}
+
+.appointment__input-name {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.appointment__input-tel {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.appointment__btn {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    max-width: 370px;
+}
+
+.appointment__checkbox {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    margin: 0 auto;
+    accent-color: #4A5E5E;
+    font-size: 12px;
+    color: #4A5E5E;
+}
+
+/*appointment*/
