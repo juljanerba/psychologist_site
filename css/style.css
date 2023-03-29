@@ -241,8 +241,12 @@ img {
     padding: 8px 20px;
     border-radius: 10px;
     border: 1px solid #000000;
+    -webkit-appearance: none;
+   /* знайшла це на stackoverflow */
 }
-::placeholder {
+
+.contact-form__input::placeholder,
+.contact-form__select::placeholder {
     color: #000000;
     font-size: 18px;
     line-height: 1.3;
