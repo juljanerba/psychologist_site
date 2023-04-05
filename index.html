@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
-    <title>Document</title>
+    <title>Psycologist</title>
 </head>
 <body>
 
@@ -125,15 +125,21 @@
         <h2 class="subtitle">
             Записаться на прием
         </h2>
-        <input type="text" class="contact-form__input contact-form__input__name" placeholder="Ваше имя *">
-        <input type="text" class="contact-form__input contact-form__input__telephone" placeholder="Ваш телефон *">
-        <select class="contact-form__input contact-form__select">
-            <option selected>Тема встречи *</option>
-        </select>
+        <input type="text" class="contact-form__input contact-form__input__name" placeholder="Ваше имя *" required>
+        <input type="text" class="contact-form__input contact-form__input__telephone" placeholder="Ваш телефон *"
+               required>
+        <label class="contact-form__select-label">
+            <select class="contact-form__select_input" required>
+                <option selected>Тема встречи *</option>
+                <span class="select-arrow material-symbols-outlined">
+            arrow_drop_down
+            </span>
+            </select>
+        </label>
         <textarea class="contact-form__input contact-form__input_textarea" placeholder="Пожелания"></textarea>
         <label class="contact-form__checkbox">
-            <input type="checkbox" checked>
-            Я согласен с политикой конфиденциальности
+            <input class="contact-form__checkbox_input visually-hidden " type="checkbox" checked>
+            <span class="checkbox_text"> Я согласен с политикой конфиденциальности</span>
         </label>
         <button class="btn btn__submit" type="submit">
             Отправить
@@ -200,18 +206,18 @@
         </article>
     </section>
 
-<form class="center appointment">
-    <h2 class="subtitle">
-        Записаться со скидкой 50 грн
-    </h2>
-    <input class="appointment__input-name" type="text" placeholder="Ваше имя *">
-    <input class="appointment__input-tel" type="tel" placeholder="Ваш телефон *">
-    <button class="btn appointment__btn" type="submit">Записаться со скидкой</button>
-    <label class="appointment__checkbox">
-        <input type="checkbox" checked>
-        Я согласен с политикой конфиденциальности
-    </label>
-</form>
+    <form class="center appointment">
+        <h2 class="subtitle">
+            Записаться со скидкой 50 грн
+        </h2>
+        <input class="appointment__input-name" type="text" placeholder="Ваше имя *">
+        <input class="appointment__input-tel" type="tel" placeholder="Ваш телефон *">
+        <button class="btn appointment__btn" type="submit">Записаться со скидкой</button>
+        <label class="appointment__checkbox">
+            <input class="appointment__checkbox_input" type="checkbox" checked>
+            <span class="appointment__checkbox_label"> Я согласен с политикой конфиденциальности </span>
+        </label>
+    </form>
 </main>
 
 <footer class="footer center">
