@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Oswald:wght@700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -125,16 +126,22 @@
         <h2 class="subtitle">
             Записаться на прием
         </h2>
-        <input type="text" class="contact-form__input contact-form__input__name" placeholder="Ваше имя *" required>
-        <input type="text" class="contact-form__input contact-form__input__telephone" placeholder="Ваш телефон *"
+        <input type="text" class=" contact-form__input" placeholder="Ваше имя *" required>
+        <input type="text" class=" contact-form__input" placeholder="Ваш телефон *"
                required>
-        <label class="contact-form__select-label">
+        <label class="contact-form__select">
             <select class="contact-form__select_input" required>
                 <option selected>Тема встречи *</option>
-                <span class="select-arrow material-symbols-outlined">
-            arrow_drop_down
-            </span>
+                <option selected>Вариант 1</option>
+                <option selected>Вариант 2</option>
+                <option selected>Вариант 3</option>
+                <option selected>Вариант 4</option>
+
             </select>
+
+            <span class=" select__arrow material-symbols-outlined">
+                arrow_drop_down
+            </span>
         </label>
         <textarea class="contact-form__input contact-form__input_textarea" placeholder="Пожелания"></textarea>
         <label class="contact-form__checkbox">
@@ -179,6 +186,69 @@
             <p class="services__desc">
                 Результат — улыбка на лице и ощущение счастья </p>
         </article>
+    </section>
+
+    <section class="reviews center">
+        <h2 class="subtitle">
+            Отзывы клиентов
+        </h2>
+        <div class="slider">
+            <button class="slider__btn slider__btn_prev">
+                <span class="material-symbols-outlined">
+                      arrow_back_ios_new
+                </span>
+            </button>
+            <div class="slider__list">
+                <article class="slider__item slider__item_active">
+                    <div class="slider__photo">
+                        <img src="img/girl.jpg" alt="avatar">
+                    </div>
+                    <h4 class="slider__info">
+                        Марина, 25 лет
+                    </h4>
+                    <p class="slider__text">
+                        Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной –
+                        несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома.
+                        Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо
+                        Валентину.
+                    </p>
+                </article>
+                <article class="slider__item">
+                    <div class="slider__photo">
+                        <img src="img/about-photo.jpg" alt="avatar">
+                    </div>
+                    <h4 class="slider__info">
+                        Марина, 25 лет
+                    </h4>
+                    <p class="slider__text">
+                        Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной –
+                        несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома.
+                        Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо
+                        Валентину.
+                    </p>
+                </article>
+                <article class="slider__item">
+                    <div class="slider__photo">
+                        <img src="img/photo-to-main-offer.jpg" alt="avatar">
+                    </div>
+                    <h4 class="slider__info">
+                        Марина, 25 лет
+                    </h4>
+                    <p class="slider__text">
+                        Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной –
+                        несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома.
+                        Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо
+                        Валентину.
+                    </p>
+                </article>
+            </div>
+            <button class="slider__btn slider__btn_next">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </button>
+        </div>
+
     </section>
 
     <section class="section-with-bg-image center services services_news">
