@@ -1,0 +1,330 @@
+@media screen and (max-width: 1366px) {
+    .center {
+        padding-left: calc(50vw - 360px);
+        padding-right: calc(50vw - 360px);
+    }
+
+    .subtitle {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .offer {
+        padding-top: 270px;
+        padding-bottom: 130px;
+        gap: 30px;
+    }
+
+    .offer__title {
+        font-size: 36px;
+        max-width: 350px;
+    }
+
+    .services {
+        grid-template-columns: repeat(3, 230px);
+    }
+
+    .services__desc {
+        font-size: 12px;
+    }
+
+    .services__icon {
+        margin-bottom: 0;
+    }
+
+    .services__title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .services__number {
+        font-size: 30px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about__img {
+        grid-column: 1/-1;
+        grid-row-start: 2;
+        width: 100%;
+        max-width: 450px;
+        margin-left: 0;
+    }
+
+    .about__title {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .about__text {
+        font-size: 14px;
+    }
+
+    .appointment__checkbox_label:after {
+        top: 3px
+    }
+
+
+    .contacts-list {
+        flex-wrap: wrap;
+        gap: 10px 20px
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 12px;
+    }
+
+    .btn {
+        max-width: 180px;
+        line-height: 24px;
+    }
+
+    .btn_bordered {
+        margin-bottom: 10px;
+    }
+
+    .center {
+        padding-left: calc(50vw - 260px);
+        padding-right: calc(50vw - 260px);
+    }
+
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: flex-start;
+
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .offer {
+        padding-top: 70px;
+        row-gap: 15px;
+        padding-bottom: 80px;
+    }
+
+    .offer__title {
+        font-size: 30px;
+        max-width: 300px;
+    }
+
+    .offer__desc {
+        font-size: 16px;
+        max-width: 280px;
+    }
+
+    .services {
+        grid-template-columns: minmax(auto, 300px);
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap: 15px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about__img {
+        grid-column: 1/-1;
+        grid-row-start: 2;
+        width: 100%;
+
+    }
+
+    .contact-form__select_input {
+        font-size: 18px;
+    }
+
+    .checkbox_text:after {
+        top: 1px;
+        left: 2px;
+    }
+
+    .appointment {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment__checkbox {
+        grid-row-start: 4;
+    }
+
+    .appointment__checkbox_label:after {
+        top: 3px;
+        left: 2px;
+    }
+
+    .appointment__btn {
+        margin: 0 auto;
+    }
+
+    .appointment .subtitle {
+        margin-bottom: 0;
+    }
+
+    .appointment__input-name,
+    .appointment__input-tel {
+        width: 100%;
+        margin: 0 auto;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .center {
+        padding-left: calc(50vw - 180px);
+        padding-right: calc(50vw - 180px);
+    }
+
+    .header.center {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav-toggler {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 15px;
+        z-index: 3;
+    }
+
+    .nav-toggler span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        display: block;
+    }
+
+    .nav-toggler span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-toggler span:nth-child(3) {
+        top: 100%;
+        transform: translateY(-50%);
+    }
+
+    input:checked ~ .nav {
+        left: 0;
+    }
+
+    input:checked ~ .nav-toggler span {
+        background: #6DE1E3;
+    }
+
+    input:checked ~ .nav-toggler span {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(225deg);
+    }
+
+    input:checked ~ .nav-toggler span:nth-child(2),
+    input:checked ~ .nav-toggler span:nth-child(3) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-225deg);
+    }
+
+    .nav {
+        position: absolute;
+        left: -250%;
+        top: 0;
+        background: #fff;
+        padding: 70px 15px;
+        width: 100%;
+        z-index: 2;
+        min-height: 100vh;
+    }
+
+    .nav__list {
+        flex-direction: column;
+    }
+
+    .logo {
+        z-index: 3
+    }
+
+    .offer {
+        background-position: 0 0;
+        padding-bottom: 30px;
+    }
+
+    .offer__title {
+        font-size: 24px;
+        max-width: 240px;
+    }
+
+    .offer__desc {
+        font-size: 12px;
+    }
+
+    .slider {
+        gap: 10px;
+    }
+
+    .slider__btn .material-symbols-outlined {
+        font-size: 20px;
+    }
+
+    .reviews.center {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .slider__list {
+        padding: 15px;
+    }
+
+    .slider__item {
+        gap: 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .footer .logo {
+        max-width: 175px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7fr;
+    }
+
+    .contact-form__input_textarea {
+        grid-column: 1/2;
+        grid-row-start: 5;
+    }
+
+    .appointment {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment__checkbox {
+        grid-row-start: 4;
+    }
+    .checkbox_text:after,
+    .appointment__checkbox_label:after {
+        left:3px;
+    }
+}
